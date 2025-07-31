@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-project</title>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Three Star Media Logo">
+            </a>
+            <nav class="primary-nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-controls="menu" aria-expanded="false">Menu</button>
+                <ul id="menu" class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <form class="search-form" action="#" method="get">
+                            <input type="search" name="q" placeholder="Search">
+                            <button type="submit" aria-label="Search">Go</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="assets/hero-image.jpg" alt="Office Interior" class="hero-bg">
+        <div class="container hero-content">
+            <h1>Welcome to Three Star Media</h1>
+            <p>We are a full service digital media agency with expertise in Digital Transformation, Marketing, Video Production, Web Development, Print, and more.</p>
+            <a href="#" class="btn btn-primary">Connect with us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="assets/about-image.jpg" alt="Meeting Room">
+            </div>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Since 2018, Three Star Media has been a leading provider of digital solutions, helping businesses and organizations achieve their goals through effective integrated strategies. We believe in high standards, clear communication, and results that matter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-box">
+                    <img src="assets/service-digital.jpg" alt="Digital Transformation">
+                    <div class="service-text">
+                        <h3>Digital Transformation</h3>
+                        <p>Upgrade your business processes with the latest digital solutions tailored to your needs for efficiency and growth.</p>
+                        <a href="#" class="btn btn-secondary">Right Here</a>
+                    </div>
+                </article>
+                <!-- Service 2 -->
+                <article class="service-box">
+                    <img src="assets/service-marketing.jpg" alt="Marketing">
+                    <div class="service-text">
+                        <h3>Marketing</h3>
+                        <p>Comprehensive marketing strategies that build brand visibility and engage customers, online and offline.</p>
+                        <a href="#" class="btn btn-secondary">What We Do</a>
+                    </div>
+                </article>
+                <!-- Service 3 -->
+                <article class="service-box">
+                    <img src="assets/service-video.jpg" alt="Video Production">
+                    <div class="service-text">
+                        <h3>Video Production</h3>
+                        <p>Professional video services to showcase your message and capture your audience in dynamic new ways.</p>
+                        <a href="#" class="btn btn-secondary">View More</a>
+                    </div>
+                </article>
+                <!-- Service 4 -->
+                <article class="service-box">
+                    <img src="assets/service-web.jpg" alt="Web Development">
+                    <div class="service-text">
+                        <h3>Web Development</h3>
+                        <p>Intuitive, responsive websites crafted for your brand that deliver results across all devices.</p>
+                        <a href="#" class="btn btn-secondary">Take a Tour</a>
+                    </div>
+                </article>
+                <!-- Service 5 -->
+                <article class="service-box">
+                    <img src="assets/service-print.jpg" alt="Print">
+                    <div class="service-text">
+                        <h3>Print</h3>
+                        <p>Branded print materials from business cards to banners that leave a lasting impression.</p>
+                        <a href="#" class="btn btn-secondary">Find Out</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container vision-container">
+            <div class="vision-content">
+                <h2>Our Vision</h2>
+                <p>To lead by innovation and help our clients achieve their goals through creative and strategic solutions.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <article class="team-member">
+                    <img src="assets/team1.jpg" alt="John Doe">
+                    <div class="team-info">
+                        <h3>John Doe</h3>
+                        <h4>Lead Creator</h4>
+                        <p>John specializes in digital strategy and creative direction, with 10+ years of experience.</p>
+                    </div>
+                </article>
+                <!-- Team Member 2 -->
+                <article class="team-member">
+                    <img src="assets/team2.jpg" alt="Bob Rite">
+                    <div class="team-info">
+                        <h3>Bob Rite</h3>
+                        <h4>Senior Developer</h4>
+                        <p>Bob develops world-class web solutions and leads technical architecture across projects.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-flex">
+                <!-- Contact Form -->
+                <form class="contact-form" action="#" method="post" autocomplete="off">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+              
+                <!-- Location Map -->
+               
+<div class="studio-location">
+                <h3>Our Studio</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.675758308082!2d-75.76414563428425!3d45.35059181325638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1743555759856!5m2!1sen!2sca"
+                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+
+            </div>
+            <!-- Hours of Operation Table -->
+            <div class="hours-section">
+                <h3>Hours of operation</h3>
+                <table class="hours-table">
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Three Star Media. All Rights Reserved.</p>
+            <p>Designed by Jane Doe</p>
+        </div>
+    </footer>
+</body>
+</body>
+</html>
