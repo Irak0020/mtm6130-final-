@@ -1,0 +1,558 @@
+/* Reset */
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1.5;
+    background: #fff;
+    color: #222;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header & Navigation */
+.site-header {
+    background: #222;
+    color: #fff;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.logo img {
+    width: 48px;
+    height: auto;
+}
+.primary-nav {
+    width: 100%;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #c78c06;
+    font-weight: bold;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+.nav-list li a {
+    color: #ffe6ac;
+    text-decoration: none;
+    padding: 5px 18px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+.nav-list li a:hover {
+    background: #c78c06;
+    color: #222;
+    border-radius: 3px;
+}
+.search-form {
+    display: flex;
+}
+.search-form input[type="search"] {
+    border: none;
+    padding: 6px 8px;
+    border-radius: 2px 0 0 2px;
+    font-size: 1rem;
+}
+.search-form button {
+    border: none;
+    background: #c78c06;
+    color: #222;
+    padding: 6px 12px;
+    border-radius: 0 2px 2px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.search-form button:hover {
+    background: #ffe6ac;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: #222;
+    color: #fff;
+    min-height: 360px;
+    margin-bottom: 2rem;
+}
+.hero-bg {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.85;
+}
+.hero-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(34,34,34,0.78);
+    padding: 2rem;
+    border-radius: 7px;
+    text-align: left;
+}
+.hero-content h1 {
+    font-size: 2.2rem;
+    color: #c78c06;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.hero-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.btn {
+    display: inline-block;
+    padding: 0.7em 2em;
+    font-weight: bold;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.22s;
+}
+.btn-primary {
+    background: #c78c06;
+    color: #222;
+}
+.btn-primary:hover {
+    background: #ffe6ac;
+}
+.btn-secondary {
+    background: #222;
+    color: #ffe6ac;
+}
+.btn-secondary:hover {
+    background: #c78c06;
+    color: #222;
+}
+
+/* About Section */
+.about-section {
+    background: #ffe6ac;
+    margin-bottom: 2rem;
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+.about-image img {
+    border-radius: 3px;
+}
+.about-content {
+    max-width: 600px;
+}
+.about-content h2 {
+    color: #c78c06;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+.about-content p {
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+.services-section {
+    margin-bottom: 2rem;
+}
+.services-section h2 {
+    color: #c78c06;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.service-box {
+    background: #ffe6ac;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(34,34,34,0.06);
+}
+.service-box img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.service-text {
+    padding: 1.5rem;
+}
+.service-text h3 {
+    color: #c78c06;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+.service-text p {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+/* Vision Section */
+.vision-banner {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.vision-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.vision-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.88);
+}
+.vision-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(34,34,34,0.84) 84%, rgba(34,34,34,0));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 2rem 2.5rem 2.5rem;
+}
+.vision-overlay h2 {
+    color: #c78c06;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+.vision-overlay p {
+    font-size: 1.08rem;
+    margin-bottom: 1.5rem;
+    max-width: 390px;
+}
+.btn-vision {
+    background: #222;
+    color: #ffe6ac;
+    font-weight: bold;
+    padding: 0.8em 2em;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    transition: background 0.18s;
+}
+.btn-vision:hover {
+    background: #c78c06;
+    color: #222;
+}
+.btn-vision span {
+    margin-left: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+@media (max-width: 759px) {
+    .vision-image-wrapper,
+    .vision-image-wrapper img {
+        height: 145px;
+    }
+    .vision-overlay {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+/* Team Section */
+.team-section {
+    margin-bottom: 2rem;
+    background: #ffe6ac;
+    padding: 2.5rem 0;
+}
+.team-section h2 {
+    color: #c78c06;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.team-member {
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(34,34,34,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+.team-member img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.team-info h3 {
+    font-size: 1.25rem;
+    color: #c78c06;
+    margin-bottom: 0.3rem;
+}
+.team-info h4 {
+    font-size: 1rem;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+}
+.team-info p {
+    font-size: 0.98rem;
+    color: #222;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-bottom: 2rem;
+}
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contact-section h2 {
+    color: #c78c06;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.contact-form label {
+    font-weight: bold;
+    color: #222;
+}
+.contact-form input,
+.contact-form textarea {
+    font-size: 1rem;
+    padding: 0.7em;
+    border: 1px solid #c78c06;
+    border-radius: 2px;
+    transition: border-color 0.2s;
+    background: #ffe6ac;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #222;
+    outline: none;
+}
+.contact-form button {
+    margin-top: 0.5rem;
+    width: 40%;
+    align-self: flex-start;
+}
+.studio-location {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(34,34,34,0.08);
+    min-width: 280px;
+}
+.studio-location h3 {
+    color: #c78c06;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+.studio-location iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Hours Table */
+.hours-section {
+    background: #ffe6ac;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 3px;
+}
+.hours-section h3 {
+    color: #c78c06;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.hours-table th,
+.hours-table td {
+    border: 1px solid #c78c06;
+    padding: 0.75em 1.2em;
+    text-align: left;
+}
+.hours-table th {
+    background: #c78c06;
+    color: white;
+    font-weight: 700;
+}
+.hours-table td {
+    background: #fff;
+}
+
+/* Footer */
+.site-footer {
+    background: #222;
+    color: #ffe6ac;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+/* Desktop Media Queries */
+@media (min-width: 760px) {
+
+    /* Header Desktop */
+    .header-container {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1.5rem 0;
+    }
+    .primary-nav .nav-list {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Hero Desktop */
+    .hero-content {
+        left: 4%;
+        top: 60px;
+        max-width: 600px;
+        background: rgba(34,34,34, 0.91);
+        padding: 2.5rem 3rem 2.5rem 2rem;
+        border-radius: 7px;
+    }
+    .hero-bg {
+        height: 460px;
+        object-fit: cover;
+    }
+
+    /* About Desktop */
+    .about-container {
+        flex-direction: row;
+        gap: 2.5rem;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .about-image {
+        flex: 1;
+        min-width: 260px;
+        max-width: 380px;
+    }
+    .about-content {
+        flex: 2;
+        max-width: 500px;
+        margin-left: 1.5rem;
+    }
+
+    /* Services Desktop */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    .service-box img {
+        height: 200px;
+    }
+
+    /* Team Desktop */
+    .team-grid {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .team-member {
+        max-width: 370px;
+    }
+
+    /* Contact Desktop */
+    .contact-flex {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+    .contact-form {
+        width: 52%;
+    }
+    .studio-location {
+        width: 45%;
+        min-width: 280px;
+    }
+    .studio-location iframe {
+        height: 250px;
+    }
+
+    /* Hours Desktop */
+    .hours-section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 650px;
+        padding: 1.7rem 1rem;
+    }
+
+    /* Vision Desktop */
+    .philosophy img {
+        width: 145px;
+    }
+}
