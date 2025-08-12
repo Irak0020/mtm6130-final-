@@ -1,4 +1,4 @@
-/* Reset */
+
 video {
     margin: 0;
     padding: 0;
@@ -460,8 +460,6 @@ img {
 
 /* Desktop Media Queries */
 @media (min-width: 760px) {
-
-    /* Header Desktop */
     .header-container {
         flex-direction: row;
         gap: 2rem;
@@ -474,8 +472,6 @@ img {
     .menu-toggle {
         display: none;
     }
-
-    /* Hero Desktop */
     .hero-content {
         left: 4%;
         top: 60px;
@@ -488,8 +484,6 @@ img {
         height: 460px;
         object-fit: cover;
     }
-
-    /* About Desktop */
     .about-container {
         flex-direction: row;
         gap: 2.5rem;
@@ -506,8 +500,6 @@ img {
         max-width: 500px;
         margin-left: 1.5rem;
     }
-
-    /* Services Desktop */
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
@@ -515,8 +507,6 @@ img {
     .service-box img {
         height: 200px;
     }
-
-    /* Team Desktop */
     .team-grid {
         flex-direction: row;
         justify-content: center;
@@ -525,8 +515,6 @@ img {
     .team-member {
         max-width: 370px;
     }
-
-    /* Contact Desktop */
     .contact-flex {
         flex-direction: row;
         gap: 3rem;
@@ -542,16 +530,12 @@ img {
     .studio-location iframe {
         height: 250px;
     }
-
-    /* Hours Desktop */
     .hours-section {
         margin-left: auto;
         margin-right: auto;
         max-width: 650px;
         padding: 1.7rem 1rem;
     }
-
-    /* Vision Desktop */
     .philosophy img {
         width: 145px;
     }
